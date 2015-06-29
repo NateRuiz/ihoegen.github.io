@@ -16,13 +16,13 @@
     var n = date.getMonth();
     var year = date.getFullYear();
     var orcistart = 2014;
-    var win = m - 1;
+    var win = (m - 1) + "months";
     var orci = (4 + m)+ "months";
     if (orci >= 12){
         orci = "1 Year"
     };
-    document.getElementById("omg").InnerHTML = orci;
-    document.getElementById.("windermere").InnerHTMl = win;
+    document.getElementById("omg").innerHTML = orci;
+    document.getElementById.("windermere").innerHTMl = win;
     
 </script>
         <div class="g--10 m--1 container container--wrap--s">
@@ -47,7 +47,7 @@
             <div class="g--4 g-s--12 fade-in-from-top anim-delay--15 card nudge--left no-nudge--s">
                 <h3>Experience</h3>
                 <p> Below is my relevant work experience:
-                <li>4 months at Windermere Realty, Web Developer</li>
+                <li><span id = win></span> at Windermere Realty, Web Developer</li>
                 <li><span id = "omg"></span> at Orci Marketing Group, Brand Ambassador </li>
                 <li>Created my own citation software for APA. <a href ="/PyCite-APA">PyCite for APA</a></li>
             </div>
