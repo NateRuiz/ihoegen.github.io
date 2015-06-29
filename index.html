@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title> Ian Hoegen Resume </title>
@@ -16,7 +11,20 @@ and open the template in the editor.
             <h1  class="m--1 g--4 g-s--11">Ian Hoegen</h1>
             <p style ='color:white;' class="m--1 g--4 g-s--11">An interactive resume, in the form of a webpage.</p>
         </header>
-
+<script>
+    var date = new Date();
+    var n = date.getMonth();
+    var year = date.getFullYear();
+    var orcistart = 2014;
+    var win = m - 1;
+    var orci = (4 + m)+ "months";
+    if (orci >= 12){
+        orci = "1 Year"
+    };
+    document.getElementById("omg").InnerHTML = orci;
+    document.getElementById.("windermere").InnerHTMl = win;
+    
+</script>
         <div class="g--10 m--1 container container--wrap--s">
 
             <div  class="g--4 g-s--12 fade-in-from-top card anim-delay--5">
@@ -40,8 +48,7 @@ and open the template in the editor.
                 <h3>Experience</h3>
                 <p> Below is my relevant work experience:
                 <li>4 months at Windermere Realty, Web Developer</li>
-                <li>8 months Orci Marketing Group, Brand Ambassador </li>
-                <li>I own my own development company, <a href = "http://www.hoegendevelopments.weebly.com"> Hoegen Developments </a></li>
+                <li><span id = "omg"></span> at Orci Marketing Group, Brand Ambassador </li>
                 <li>Created my own citation software for APA. <a href ="/PyCite-APA">PyCite for APA</a></li>
             </div>
         </div>
@@ -55,8 +62,6 @@ and open the template in the editor.
             <div class="g--4 g-s--12 nudge--right fade-in-from-top anim-delay--25 card">
                 <h3> Awards </h3>
                 <li>Peninsula High School Baseball Most Inspirational Player</li>
-
-
             </div>
             <div class="g--4 g-s--12 nudge--right fade-in-from-top anim-delay--30 card">
                 <h3> Contact Me </h3>
